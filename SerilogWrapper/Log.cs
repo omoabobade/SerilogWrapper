@@ -15,6 +15,7 @@ namespace SeriWrapper
         public static string LogPath;
         public static bool Debug;
 
+
         private static Logger logger = new LoggerConfiguration()
             .WriteTo.File(LogPath + "log.txt", rollingInterval: RollingInterval.Hour)
             .CreateLogger();
